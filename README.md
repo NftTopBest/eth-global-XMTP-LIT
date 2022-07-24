@@ -33,8 +33,9 @@ This can be used as `chat 2 earn` or `selling while chatting`
   * [HeadLess UI](https://headlessui.com/react/dialog)
   * [Polygon Testnet Mumbai to deploy our ERC721 NFT contract](https://mumbai.polygonscan.com/)
 
-## Sponsor Technology Explain
+## Features && Sponsor Technology Explain
 
+* User can receive new XMTP message notification via our Chrome Notification Extension
 * [IPFS & Filecoin](https://ethglobal.com/events/hackfs2022/prizes#ipfs-and-filecoin) NFT.Storage
   * we build the `useNFTStorage` hook to provide a utils for our application to interact with IPFS: [code](https://github.com/NftTopBest/xmtp-chat-with-lit/pull/1/files#diff-2a09e7c28157db59a45459d3ec9ecaa190ce2477b0f9cc5cba44e42510ee4381)
   * upload encryptedFile to IPFS: [code](https://github.com/NftTopBest/xmtp-chat-with-lit/pull/1/files#diff-d5c6ae9b3e48335a201524ea02f620402ef77d124d2686e298cae142d3fba74bR41-R59)
@@ -43,6 +44,23 @@ This can be used as `chat 2 earn` or `selling while chatting`
   * fetch the encryptedFile via nftstorage.link url: [code](https://github.com/NftTopBest/xmtp-chat-with-lit/pull/1/files#diff-efef3152bda1b784ec4b6c330dcc8a320b4d95d2c94abdfc125c973b4eeba510R29-R39)
 * [Polygon](https://ethglobal.com/events/hackfs2022/prizes#polygon)
   * We deploy an ERC721 NFT contact to mumbai testnet to test our token gating contract [polygonscan link](https://mumbai.polygonscan.com/address/0x83b06d09b99ad2641dd9b1132e8ce8809b623433#code)
-  * 
-
-## Features
+  * It's an ERC721 contract with ERC2981 interface implement: [code](https://github.com/NftTopBest/eth-global-XMTP-LIT-img-gating-chat/blob/main/contracts/CTC_ERC721A2.sol#L9)
+  * It can admin with some params: [code](https://github.com/NftTopBest/eth-global-XMTP-LIT-img-gating-chat/blob/main/contracts/CTC_ERC721A2.sol#L89-L118)
+    * Provide white list addresses with mint number specific
+    * toggle reveal/opened/publicMint status
+    * setup public mint price
+    * setup royalty value
+    * mint with white list or public mint: [code](https://github.com/NftTopBest/eth-global-XMTP-LIT-img-gating-chat/blob/main/contracts/CTC_ERC721A2.sol#L135-L185)
+* [XMTP](https://ethglobal.com/events/hackfs2022/prizes#xmtp) && [LIT](https://ethglobal.com/events/hackfs2022/prizes#lit-protocol)
+  * User can send token gating content in chat box
+    * Inject ipfs file upload logic and combine it with LIT token gating: [TokenGatingModal code](https://github.com/NftTopBest/xmtp-chat-with-lit/pull/1/files#diff-d5c6ae9b3e48335a201524ea02f620402ef77d124d2686e298cae142d3fba74b)
+    * Input ERC721 contract address
+    * select image and gating with LIT
+      * show preview before submit(without gating)
+        * encrypt with LIT
+    * generate metadata CID
+    * submit metadata CID as message content
+  * User can unlock token gating content in message list
+  * Chat message content with the NFT gating UX [MessageContent code](https://github.com/NftTopBest/xmtp-chat-with-lit/pull/1/files#diff-efef3152bda1b784ec4b6c330dcc8a320b4d95d2c94abdfc125c973b4eeba510)
+  * unlock button to wait for user to unlock the chat message
+  * [LitProvider](https://github.com/NftTopBest/xmtp-chat-with-lit/pull/1/files#diff-3a14c746ec8e9e2076e63cc868894aca171a2adc52dc7e08a5884b872d1d1dc5) to provide LIT init and helper function
