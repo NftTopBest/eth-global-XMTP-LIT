@@ -1,0 +1,27 @@
+{
+  "name": "XMTP Message Notification",
+  "description": "An extension for XMTP messageer",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Open XMTP Message Notification"
+  },
+  "background": {
+    "service_worker": "./background.js",
+    "type": "module"
+  },
+  "icons": {
+    "16": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "webNavigation",
+    "notifications",
+    "storage"
+  ],
+  "optional_permissions": []
+}
