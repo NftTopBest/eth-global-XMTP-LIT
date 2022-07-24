@@ -7,10 +7,11 @@ And we inject into the XMTP Chat Opensource code with LIT and IPFS(via NFT.Stora
 Users can send images with title/description and NFT gating contract addresses that only users with the NFT in their wallet can `unlock` the image.
 This can be used as `chat 2 earn` or `selling while chatting`
 
+<img src="./screenshot-1.png" />
 ## Submission resources List
 
 * [XMTP chat online demo link](https://eth-global-xmtp-lit-img-gating-chat.web3hacker.ninja/)
-* [Video Demo Link]()
+* [Video Demo Link](https://youtu.be/Isl30gzltsA)
 * [Screenshots](./screenshots)
 * [XMTP Notification Chrome Extension code]()
 * [XMTP Chat PR code](https://github.com/NftTopBest/xmtp-chat-with-lit/pull/1/files)
@@ -36,6 +37,9 @@ This can be used as `chat 2 earn` or `selling while chatting`
 ## Features && Sponsor Technology Explain
 
 * User can receive new XMTP message notification via our Chrome Notification Extension
+  * user can login with metamask: [code](https://github.com/NftTopBest/chrome-extension-xmtp-notifictation/blob/main/src/context/WalletProvider.js#L144)
+  * user can login into xmtp to get the xmtp keys: [code](https://github.com/NftTopBest/chrome-extension-xmtp-notifictation/blob/main/src/context/WalletProvider.js#L109)
+  * user can receive notification while get new xmtp message: [code](https://github.com/NftTopBest/chrome-extension-xmtp-notifictation/blob/main/src/context/WalletProvider.js#L83)
 * [IPFS & Filecoin](https://ethglobal.com/events/hackfs2022/prizes#ipfs-and-filecoin) NFT.Storage
   * we build the `useNFTStorage` hook to provide a utils for our application to interact with IPFS: [code](https://github.com/NftTopBest/xmtp-chat-with-lit/pull/1/files#diff-2a09e7c28157db59a45459d3ec9ecaa190ce2477b0f9cc5cba44e42510ee4381)
   * upload encryptedFile to IPFS: [code](https://github.com/NftTopBest/xmtp-chat-with-lit/pull/1/files#diff-d5c6ae9b3e48335a201524ea02f620402ef77d124d2686e298cae142d3fba74bR41-R59)
@@ -64,3 +68,18 @@ This can be used as `chat 2 earn` or `selling while chatting`
   * Chat message content with the NFT gating UX [MessageContent code](https://github.com/NftTopBest/xmtp-chat-with-lit/pull/1/files#diff-efef3152bda1b784ec4b6c330dcc8a320b4d95d2c94abdfc125c973b4eeba510)
   * unlock button to wait for user to unlock the chat message
   * [LitProvider](https://github.com/NftTopBest/xmtp-chat-with-lit/pull/1/files#diff-3a14c746ec8e9e2076e63cc868894aca171a2adc52dc7e08a5884b872d1d1dc5) to provide LIT init and helper function
+
+## Future Plan
+
+* Rewrite our own Chat Application with XMTP and LIT by Vue3 framework
+* Chrome Extension will inject ui into Twitter page that can chat direct on the twitter page also show some of the user's NFT on that injected components.
+* Build the next generation of the Social platform that all follow the Web3 logic!
+* make the XMTP listener work in the background service worker
+  * I have spend over 10+ hours try to make it work in the background service worker, but it has some issues
+    * xmtp package has some kind of `fs` call that can not work in browser
+    * that I can not compile it to work in the background.js
+* use [plasmo extension framework](https://www.plasmo.com/) to re-build the extension
+  * I try before over 20 hours, but still, the same as the xmtp compile problem
+  * Need more digging for this problem
+
+<img src="./screenshot-2.png" />
