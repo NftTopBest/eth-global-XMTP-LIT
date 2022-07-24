@@ -18,9 +18,9 @@ yarn build # build this extension code
   
 ## Features
 
-* user can login with metamask: [code](https://github.com/NftTopBest/chrome-extension-xmtp-notifictation/blob/main/src/context/WalletProvider.js#L144)
-* user can login into xmtp to get the xmtp keys: [code](https://github.com/NftTopBest/chrome-extension-xmtp-notifictation/blob/main/src/context/WalletProvider.js#L109)
-* user can receive notification while get new xmtp message: [code](https://github.com/NftTopBest/chrome-extension-xmtp-notifictation/blob/main/src/context/WalletProvider.js#L83)
+* user can login with metamask: [code](https://github.com/NftTopBest/eth-global-XMTP-LIT-img-gating-chat/blob/main/xmtp-notification-chrome-extension/src/context/WalletProvider.js#L144)
+* user can login into xmtp to get the xmtp keys: [code](https://github.com/NftTopBest/eth-global-XMTP-LIT-img-gating-chat/blob/main/xmtp-notification-chrome-extension/src/context/WalletProvider.js#L109)
+* user can receive notification while get new xmtp message: [code](https://github.com/NftTopBest/eth-global-XMTP-LIT-img-gating-chat/blob/main/xmtp-notification-chrome-extension/src/context/WalletProvider.js#L83)
 
 ## Future Implement
 

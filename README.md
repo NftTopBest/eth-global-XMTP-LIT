@@ -13,7 +13,7 @@ This can be used as `chat 2 earn` or `selling while chatting`
 * [XMTP chat online demo link](https://eth-global-xmtp-lit-img-gating-chat.web3hacker.ninja/)
 * [Video Demo Link](https://youtu.be/Isl30gzltsA)
 * [Screenshots](./screenshots)
-* [XMTP Notification Chrome Extension code]()
+* [XMTP Notification Chrome Extension code](https://github.com/NftTopBest/eth-global-XMTP-LIT-img-gating-chat/blob/main/xmtp-notification-chrome-extension/README.md)
 * [XMTP Chat PR code](https://github.com/NftTopBest/xmtp-chat-with-lit/pull/1/files)
 
 ## Tech We used
