@@ -41,7 +41,8 @@ This can be used as `chat 2 earn` or `selling while chatting`
   * upload encryptedFile metadata json  to IPFS: [code](https://github.com/NftTopBest/xmtp-chat-with-lit/pull/1/files#diff-d5c6ae9b3e48335a201524ea02f620402ef77d124d2686e298cae142d3fba74bR67-R86)
   * get json data from IPFS by the `getJson` function write in `useNFTStorage` hook: [code](https://github.com/NftTopBest/xmtp-chat-with-lit/pull/1/files#diff-efef3152bda1b784ec4b6c330dcc8a320b4d95d2c94abdfc125c973b4eeba510R63-R71)
   * fetch the encryptedFile via nftstorage.link url: [code](https://github.com/NftTopBest/xmtp-chat-with-lit/pull/1/files#diff-efef3152bda1b784ec4b6c330dcc8a320b4d95d2c94abdfc125c973b4eeba510R29-R39)
-
-
+* [Polygon](https://ethglobal.com/events/hackfs2022/prizes#polygon)
+  * We deploy an ERC721 NFT contact to mumbai testnet to test our token gating contract [polygonscan link](https://mumbai.polygonscan.com/address/0x83b06d09b99ad2641dd9b1132e8ce8809b623433#code)
+  * 
 
 ## Features
